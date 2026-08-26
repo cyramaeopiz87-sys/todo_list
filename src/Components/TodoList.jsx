@@ -12,14 +12,12 @@ const TodoList = () => {
       setHeadingInput('');
     }
   };
-
-  const handleDeleteTodo = (index) => {
+  
+    const handleDeleteTodo = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
   };
-
- 
   const handleAddList = (index) => {
     if (listInputs[index] && listInputs[index].trim() !== '') {
       const newTodos = [...todos];
